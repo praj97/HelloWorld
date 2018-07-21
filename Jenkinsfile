@@ -5,7 +5,6 @@ pipeline {
       steps {
         sh 'javac hello.java'
         fileExists 'Hello.class'
-        sh 'java Hello'
       }
     }
     stage('Printing the message') {
